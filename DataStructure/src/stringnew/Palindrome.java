@@ -1,7 +1,4 @@
-/*
-Is it a palindrome? Let's find out.
-*/
-
+package stringnew;
 public class Palindrome {
     
   public static void main(String[] args) {

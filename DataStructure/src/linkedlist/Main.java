@@ -35,10 +35,13 @@ public class Main {
 		dll.display();
 		
 		
-//		dll.deleteFirst();
-//		dll.display();
-//		dll.deleteLast();
-//		dll.display();
+		dll.deleteFirst();
+		dll.display();
+		dll.deleteLast();
+		dll.display();
+		
+		dll.delete(1);
+		dll.display();
 		
 		
 		

@@ -23,16 +23,21 @@ public class DoublyLinkedList {
 	
 	public void insertLast(int val) {
 		
-		if(tail == null) {
-			insertFirst(val);
+		Node last = head;
+
+		while(last.next!=null) {
+			last = last.next;
 		}
+		
 		
 		Node node = new Node(val);
 		node.next = null;
-		node.previous = tail;
+		node.previous = last;
+		last.next = node;
 		
-		tail.next = node;
 		tail=node;
+		
+
 		
 		size = size+1;
 	}
@@ -41,7 +46,7 @@ public class DoublyLinkedList {
 		
 		head = head.next;
 		
-		size--;
+		size=size-1;
 		
 	}
 	
@@ -49,9 +54,10 @@ public class DoublyLinkedList {
 
 		tail = tail.previous;
 		tail.next=null;
-		
-		size--;
-		
+	
+
+		size = size - 1;
+
 	}
 	
 	public void insert(int val, int index) {
