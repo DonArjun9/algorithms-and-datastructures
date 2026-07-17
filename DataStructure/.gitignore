@@ -1,4 +1,4 @@
 /bin/
 
 # Ignore all compiled Java class files
-*.class
+/*.class
